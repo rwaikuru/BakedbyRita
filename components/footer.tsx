@@ -88,12 +88,12 @@ export default function Footer() {
           </div>
           <div className="space-y-3">
             <h3 className="text-sm font-semibold">Contact</h3>
-            <ul className="space-y-2">
-              <li className="text-sm text-muted-foreground">123 Bakery Street</li>
+            {/* <ul className="space-y-2">
+              <li className="text-sm text-muted-foreground"></li>
               <li className="text-sm text-muted-foreground">Cakeville, CV 12345</li>
               <li className="text-sm text-muted-foreground">info@bakedbyrita.com</li>
               <li className="text-sm text-muted-foreground">(123) 456-7890</li>
-            </ul>
+            </ul> */}
             <div className="flex space-x-3">
               <Link
                 href="#"
