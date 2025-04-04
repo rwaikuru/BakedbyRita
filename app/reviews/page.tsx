@@ -13,7 +13,7 @@ export default function ReviewsPage() {
   const [hoveredRating, setHoveredRating] = useState(0)
   const [reviewSubmitted, setReviewSubmitted] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     // In a real app, you would send the review data to your backend
     setReviewSubmitted(true)
@@ -171,28 +171,28 @@ export default function ReviewsPage() {
 // Sample data
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "Miss Sarah ",
     rating: 5,
     comment:
       "Rita made the most beautiful birthday cake for my daughter. It was not only gorgeous but delicious too! Everyone at the party was impressed.",
     date: "March 15, 2023",
   },
   {
-    name: "Michael Brown",
+    name: "Michael David",
     rating: 5,
     comment:
       "The wedding cake exceeded our expectations. All our guests were impressed by both the design and taste. Rita was professional and delivered exactly what we wanted.",
     date: "February 2, 2023",
   },
   {
-    name: "Emily Davis",
+    name: "Emily Wambui",
     rating: 4,
     comment:
       "Ordered cupcakes for an office party and they were a hit! Will definitely order again. The only reason for 4 stars instead of 5 is that the delivery was a bit late.",
     date: "April 10, 2023",
   },
   {
-    name: "David Wilson",
+    name: "Ambrose Mwangi",
     rating: 5,
     comment:
       "Rita's cakes are simply the best in town. I've ordered multiple times and have never been disappointed. Highly recommend the red velvet!",
